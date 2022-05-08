@@ -1,0 +1,77 @@
+<sdf version="1.5">
+	<world name="default">
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+		<actor name="human">
+			<skin>
+				<filename>walk.dae</filename>
+			</skin>
+			<animation name="walking">
+				<filename>moonwalk.dae</filename>
+				<interpolate_x>true</interpolate_x>
+			</animation>
+			<script>
+				<trajectory id="0" type="walking">
+				<waypoint><time>0.0</time><pose>2.0744747296857793 7.9950242548983965 0  0 0 -0.9137211848947444</pose></waypoint><waypoint><time>0.5</time><pose>2.3704253977032526 7.611384663622277 0  0 0 -0.7330408687325142</pose></waypoint><waypoint><time>1.0</time><pose>2.6827994791014755 7.330120316445924 0  0 0 -0.8458421918692061</pose></waypoint><waypoint><time>1.5</time><pose>3.0479966598906474 6.917874007580412 0  0 0 -0.4366158485239252</pose></waypoint><waypoint><time>2.0</time><pose>3.422338750974961 6.7431861881403155 0  0 0 -1.0542267627013635</pose></waypoint><waypoint><time>2.5</time><pose>3.7220277502066192 6.21557930900101 0  0 0 -0.5202087971169641</pose></waypoint><waypoint><time>3.0</time><pose>4.203019001495178 5.9400487087604885 0  0 0 -0.992824116691906</pose></waypoint><waypoint><time>3.5</time><pose>4.454888870776818 5.553907549755266 0  0 0 -0.8821240153972996</pose></waypoint><waypoint><time>4.0</time><pose>4.7687338195688715 5.172614287591855 0  0 0 -0.6215238406702741</pose></waypoint><waypoint><time>4.5</time><pose>5.143053771620062 4.904521844449757 0  0 0 -1.032558147999623</pose></waypoint><waypoint><time>5.0</time><pose>5.412399780063371 4.453384169447202 0  0 0 -0.644518251846598</pose></waypoint><waypoint><time>5.5</time><pose>5.839783317960413 4.132166762552808 0  0 0 -0.8625395951656059</pose></waypoint><waypoint><time>6.0</time><pose>6.141207149689214 3.78024251190409 0  0 0 -0.6282997491285928</pose></waypoint><waypoint><time>6.5</time><pose>6.508750948167124 3.513216858193468 0  0 0 -0.9158912004602537</pose></waypoint><waypoint><time>7.0</time><pose>6.828172662909921 3.097288697526475 0  0 0 -0.7811673623679726</pose></waypoint><waypoint><time>7.5</time><pose>7.211566468765664 2.717125369254721 0  0 0 -0.7533594746409135</pose></waypoint><waypoint><time>8.0</time><pose>7.540550802098654 2.4085738407216484 0  0 0 -0.7625751111879915</pose></waypoint><waypoint><time>8.5</time><pose>7.9864091979040905 1.9826163988309666 0  0 0 -0.7341236952439791</pose></waypoint><waypoint><time>9.0</time><pose>8.308191213409295 1.6922495276313765 0  0 0 -0.7356567168132941</pose></waypoint><waypoint><time>9.5</time><pose>8.706817519454287 1.3314303258176674 0  0 0 -0.9089995320348956</pose></waypoint><waypoint><time>10.0</time><pose>9.022623544391797 0.9260248244496443 0  0 0 -0.9089995320348956</pose></waypoint></trajectory>
+			</script>
+		</actor>
+		<actor name="robot0">
+			<pose>0 0 0  0 0 0</pose>
+			<link name="body">
+				<pose>0 0 0  1.5708 0 0</pose>
+				<visual name="visual">
+					<geometry>
+						<mesh>
+							<uri>model://duck.dae</uri>
+							<scale>0.25 0.25 0.25</scale>
+						</mesh>
+					</geometry>
+				</visual>
+			</link>
+			<script>
+				<trajectory id="0" type="moving">
+				<waypoint><time>0.5</time><pose>9.0 1.0 0  0 0 2.272084592885917</pose></waypoint><waypoint><time>1.0</time><pose>8.7466521 1.3 0  0 0 1.9703322837356587</pose></waypoint><waypoint><time>1.5</time><pose>8.4933043 1.9 0  0 0 1.9434585387307368</pose></waypoint><waypoint><time>2.0</time><pose>8.2399564 2.5480662 0  0 0 1.9434584048811399</pose></waypoint><waypoint><time>2.5</time><pose>7.9866086 3.1961324 0  0 0 1.9434585387307381</pose></waypoint><waypoint><time>3.0</time><pose>7.7332607 3.8441986 0  0 0 1.9434584048811387</pose></waypoint><waypoint><time>3.5</time><pose>7.4799129 4.4922648 0  0 0 1.9434585387307381</pose></waypoint><waypoint><time>4.0</time><pose>7.226565 5.140331 0  0 0 1.9434584048811396</pose></waypoint><waypoint><time>4.5</time><pose>6.9732172 5.7883972 0  0 0 2.24628335949271</pose></waypoint><waypoint><time>5.0</time><pose>6.4539708 6.4364634 0  0 0 2.551058411341424</pose></waypoint><waypoint><time>5.5</time><pose>5.9347245 6.7845296 0  0 0 2.818877896300714</pose></waypoint><waypoint><time>6.0</time><pose>5.4154781 6.9581682 0  0 0 2.8188778383762205</pose></waypoint><waypoint><time>6.5</time><pose>4.8962318 7.1318068 0  0 0 2.8188777230841673</pose></waypoint><waypoint><time>7.0</time><pose>4.3769854 7.3054455 0  0 0 2.8188778383762205</pose></waypoint><waypoint><time>7.5</time><pose>3.8577391 7.4790841 0  0 0 2.818877896300714</pose></waypoint><waypoint><time>8.0</time><pose>3.3384927 7.6527227 0  0 0 2.818877665159647</pose></waypoint><waypoint><time>8.5</time><pose>2.8192464 7.8263614 0  0 0 2.818877896300714</pose></waypoint><waypoint><time>9.0</time><pose>2.3 8.0 0  0 0 3.141592653589793</pose></waypoint><waypoint><time>10.0</time><pose>2.0 8.0 0  0 0 3.141592653589793</pose></waypoint></trajectory>
+			</script>
+		</actor>
+	<actor name="robot1">
+			<pose>0 0 0  0 0 0</pose>
+			<link name="body">
+				<pose>0 0 0  1.5708 0 0</pose>
+				<visual name="visual">
+					<geometry>
+						<mesh>
+							<uri>model://duck.dae</uri>
+							<scale>0.25 0.25 0.25</scale>
+						</mesh>
+					</geometry>
+				<material><ambient>0.0 0.8 0.0</ambient><diffuse>0.0 0.8 0.0</diffuse></material></visual>
+			</link>
+			<script>
+				<trajectory id="0" type="moving">
+				<waypoint><time>0.5</time><pose>9.0 1.0 0  0 0 2.3230338834886224</pose></waypoint><waypoint><time>1.0</time><pose>8.7192646 1.3 0  0 0 2.008429491860708</pose></waypoint><waypoint><time>1.5</time><pose>8.4385292 1.9 0  0 0 1.9996921653446922</pose></waypoint><waypoint><time>2.0</time><pose>8.1577938 2.5139174 0  0 0 1.9996921037403292</pose></waypoint><waypoint><time>2.5</time><pose>7.8770584 3.1278349 0  0 0 1.9996921653446933</pose></waypoint><waypoint><time>3.0</time><pose>7.596323 3.7417523 0  0 0 1.999692103740329</pose></waypoint><waypoint><time>3.5</time><pose>7.3155876 4.3556698 0  0 0 1.9996921653446922</pose></waypoint><waypoint><time>4.0</time><pose>7.0348522 4.9695872 0  0 0 1.9996921653446933</pose></waypoint><waypoint><time>4.5</time><pose>6.7541168 5.5835046 0  0 0 2.2492684404628527</pose></waypoint><waypoint><time>5.0</time><pose>6.2592149 6.1974221 0  0 0 2.5763320119924153</pose></waypoint><waypoint><time>5.5</time><pose>5.764313 6.5113395 0  0 0 2.735736727887049</pose></waypoint><waypoint><time>6.0</time><pose>5.2694112 6.7240053 0  0 0 2.7357368011810155</pose></waypoint><waypoint><time>6.5</time><pose>4.7745093 6.9366711 0  0 0 2.7357368011810155</pose></waypoint><waypoint><time>7.0</time><pose>4.2796074 7.1493369 0  0 0 2.735736898451964</pose></waypoint><waypoint><time>7.5</time><pose>3.7847056 7.3620026 0  0 0 2.735736801181015</pose></waypoint><waypoint><time>8.0</time><pose>3.2898037 7.5746684 0  0 0 2.73573672788705</pose></waypoint><waypoint><time>8.5</time><pose>2.7949019 7.7873342 0  0 0 2.7357368011810155</pose></waypoint><waypoint><time>9.0</time><pose>2.3 8.0 0  0 0 3.141592653589793</pose></waypoint><waypoint><time>10.0</time><pose>2.0 8.0 0  0 0 3.141592653589793</pose></waypoint></trajectory>
+			</script>
+		</actor>
+	<actor name="robot2">
+			<pose>0 0 0  0 0 0</pose>
+			<link name="body">
+				<pose>0 0 0  1.5708 0 0</pose>
+				<visual name="visual">
+					<geometry>
+						<mesh>
+							<uri>model://duck.dae</uri>
+							<scale>0.25 0.25 0.25</scale>
+						</mesh>
+					</geometry>
+				<material><ambient>0.8 0.0 0.0</ambient><diffuse>0.8 0.0 0.0</diffuse></material></visual>
+			</link>
+			<script>
+				<trajectory id="0" type="moving">
+				<waypoint><time>0.5</time><pose>9.0 1.0 0  0 0 2.356194490192346</pose></waypoint><waypoint><time>1.0</time><pose>8.7 1.3 0  0 0 2.071937750518189</pose></waypoint><waypoint><time>1.5</time><pose>8.3843534 1.876223 0  0 0 2.0719378840064264</pose></waypoint><waypoint><time>2.0</time><pose>8.0687067 2.452446 0  0 0 2.0719377505181904</pose></waypoint><waypoint><time>2.5</time><pose>7.7530601 3.028669 0  0 0 2.0719378840064264</pose></waypoint><waypoint><time>3.0</time><pose>7.4374134 3.604892 0  0 0 2.07193775051819</pose></waypoint><waypoint><time>3.5</time><pose>7.1217668 4.181115 0  0 0 2.0719378840064255</pose></waypoint><waypoint><time>4.0</time><pose>6.8061201 4.757338 0  0 0 2.0719377505181895</pose></waypoint><waypoint><time>4.5</time><pose>6.4904735 5.333561 0  0 0 2.250417332888587</pose></waypoint><waypoint><time>5.0</time><pose>6.0248653 5.909784 0  0 0 2.606149591702226</pose></waypoint><waypoint><time>5.5</time><pose>5.5592572 6.186007 0  0 0 2.6337221736156944</pose></waypoint><waypoint><time>6.0</time><pose>5.093649 6.4451488 0  0 0 2.633722009637675</pose></waypoint><waypoint><time>6.5</time><pose>4.6280408 6.7042907 0  0 0 2.6337219183730034</pose></waypoint><waypoint><time>7.0</time><pose>4.1624327 6.9634326 0  0 0 2.6337221736156944</pose></waypoint><waypoint><time>7.5</time><pose>3.6968245 7.2225744 0  0 0 2.6337220096376734</pose></waypoint><waypoint><time>8.0</time><pose>3.2312163 7.4817163 0  0 0 2.633722082351044</pose></waypoint><waypoint><time>8.5</time><pose>2.7656082 7.7408581 0  0 0 2.6337220096376734</pose></waypoint><waypoint><time>9.0</time><pose>2.3 8.0 0  0 0 3.141592653589793</pose></waypoint><waypoint><time>10.0</time><pose>2.0 8.0 0  0 0 3.141592653589793</pose></waypoint></trajectory>
+			</script>
+		</actor>
+	</world>
+</sdf>

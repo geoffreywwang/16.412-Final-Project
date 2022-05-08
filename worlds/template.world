@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.5">
+	<world name="default">
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+		<actor name="human">
+			<skin>
+				<filename>walk.dae</filename>
+			</skin>
+			<animation name="walking">
+				<filename>moonwalk.dae</filename>
+				<interpolate_x>true</interpolate_x>
+			</animation>
+			<script>
+				<trajectory id="0" type="walking">
+				</trajectory>
+			</script>
+		</actor>
+		<actor name="robot">
+			<pose>0 0 0  0 0 0</pose>
+			<link name="body">
+				<pose>0 0 0  1.5708 0 0</pose>
+				<visual name="visual">
+					<geometry>
+						<mesh>
+							<uri>model://duck.dae</uri>
+							<scale>0.25 0.25 0.25</scale>
+						</mesh>
+					</geometry>
+				</visual>
+			</link>
+			<script>
+				<trajectory id="0" type="moving">
+				</trajectory>
+			</script>
+		</actor>
+	</world>
+</sdf>
