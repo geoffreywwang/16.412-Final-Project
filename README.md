@@ -1,4 +1,9 @@
-# 16.412 Final Project
+# 16.412 Final Project - Robot Planner for Human Avoidance
+
+This project aims to develop a system for predicting human motion through a space and plan a robot trajectory to avoid the human. The class Planner provides a high level interface, which can take in robot dynamics, allowed risk, and a set of observed human trajectories, and generate the robot plan.  For an example of this interface in action, see `planner_test.py`.  
+In addition to the planner itself, we use a 3D Gazebo simulation to visualize human motion and the robot avoidance.
+
+<img src="planner_visualization.png" width="500"/>
 
 ## Installation
 
